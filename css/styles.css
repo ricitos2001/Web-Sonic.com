@@ -193,7 +193,6 @@ body{
 }
 
 .cuerpo__caja__imagen-caja{
-    width: 100%;
     height: auto;
     padding-right:2rem;
     padding-left: 2rem;
@@ -201,6 +200,7 @@ body{
 }
 
 .cuerpo__caja__imagen-caja__imagen{
+    width: 100%;
     border: 0.5rem solid var(--maize);
     border-radius: 2rem;
 }
