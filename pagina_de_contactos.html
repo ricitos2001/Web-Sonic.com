@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" sizes="64x64" href="./assets/img/OIF.ico">
+            <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/OIF.ico">
+            <link rel="stylesheet" href="css/styles.css">
+            <title>Web-Sonic.com</title>
+        </head>
+        <body>
+            <header class="cabecera">
+                <article class="cabecera__portada">
+                    <img src="assets/img/ring.gif" alt="Ring" class="cabecera__portada__logo">
+                    <h1>Web-Sonic.com</h1>
+                </article>
+                <nav class="cabecera__navegador">
+                    <input type="checkbox" id="casilla-menu" class="cabecera__navegador__casilla-menu">
+                    <label for="casilla-menu" class="cabecera__navegador__icono-menu">
+                        <i class="cabecera__navegador__icono-menu__barra1"></i>
+                        <i class="cabecera__navegador__icono-menu__barra2"></i>
+                        <i class="cabecera__navegador__icono-menu__barra3"></i>
+                    </label>
+                    <ul class="cabecera__navegador__enlaces">
+                        <li><a href="pagina_principal.html">pagina principal</a></li>
+                        <li><a href="pagina_de_productos.html">productos</a></li>
+                        <li><a href="pagina_de_contactos.html">pagina de contactos</a></li>
+                        <li><a href="pagina_adicional.html">contenido extra</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="cuerpo">
+                <h2 class="cuerpo__titulo">PAGINA DE CONTACTO</h2>
+                <article class="cuerpo__caja-formulario">
+                    <a href="assets/img/sonic.gif"><img src="assets/img/sonic.gif" alt="Sonic Mania" class="cuerpo__caja-formulario__imagen-formulario"></a>
+                    <h3>formulario</h3>
+                    <form action="/submit" method="POST">
+                        <fieldset class="cuerpo__caja-formulario__formulario">
+                            <legend>formulario</legend>
+                            <label class="cuerpo__caja-formulario__formulario__campos">
+                                nombre y apellidos
+                                <input type="text" name="nombre" class="cuerpo_">
+                            </label>
+                            <label class="cuerpo__caja-formulario__formulario__campos">
+                                edad
+                                <input type="number" name="edad">
+                            </label>
+                            <label class="cuerpo__caja-formulario__formulario__campos">
+                                fecha de nacimiento
+                                <input type="date" name="fecha">
+                            </label>
+                            <label class="cuerpo__caja-formulario__formulario__campos">
+                                genero
+                                <select name="genero">
+                                    <option value="sin especificar">sin especificar</option>
+                                    <option value="hombre">hombre</option>
+                                    <option value="mujer">mujer</option>
+                                </select>
+                            </label>
+                            <label class="cuerpo__caja-formulario__formulario__campos">
+                                correo electronico
+                                <input type="text" name="correo">
+                            </label>
+                            <label class="cuerpo__caja-formulario__formulario__campo-termino">
+                                acepto los terminos de privacidad y condiciones de servicio
+                                <input type="checkbox" name="terminos" value="terminos">
+                            </label>
+                            <input type="submit" name="enviar" value="enviar formulario">
+                            <input type="reset" name="borrar" value="borrar formulario">
+                        </fieldset>
+                    </form>
+                </article>
+                <nav class="cuerpo__redes">
+                    <h3 class="cuerpo__redes__subtitulo">sigueme en mis redes sociales: </h3>
+                    <a href="https://www.facebook.com/cesargabriel.ucha/"><img src="./assets/img/facebook_logo.png" alt="Facebook" class="cuerpo__redes__red"></a>
+                    <a href="https://www.instagram.com/ricitos2001/"><img src="./assets/img/instagram_logo.png" alt="Instagram" class="cuerpo__redes__red"></a>
+                    <a href="https://x.com/UchaCesar"><img src="./assets/img/X_logo.png" alt="X" class="cuerpo__redes__red"></a>
+                    <a href="https://www.youtube.com/@ricitos2001"><img src="./assets/img/youtube_logo.png" alt="Youtube" class="cuerpo__redes__red"></a>
+                    <a href="https://github.com/ricitos2001"><img src="./assets/img/github_logo.png" alt="Github" class="cuerpo__redes__red"></a>
+                </nav>
+            </main>
+            <footer class="pie">
+                <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
+                    <img src="./assets/img/copyright.png" alt="Logo" class="pie__copyright">
+                </h4>
+            </footer>
+        </body>
+    </html>
