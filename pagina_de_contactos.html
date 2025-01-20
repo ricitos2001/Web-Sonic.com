@@ -30,13 +30,12 @@
                 </nav>
             </header>
             <main class="cuerpo">
-                <h2 class="cuerpo__titulo">PAGINA DE CONTACTO</h2>
-                <article class="cuerpo__caja-formulario">
+                <h2 class="cuerpo__titulo">PAGINA DE CONTACTOS</h2>
+                <section class="cuerpo__caja-formulario">
                     <a href="assets/img/sonic.gif"><img src="assets/img/sonic.gif" alt="Sonic Mania" class="cuerpo__caja-formulario__imagen-formulario"></a>
-                    <h3>formulario</h3>
-                    <form action="/submit" method="POST">
-                        <fieldset class="cuerpo__caja-formulario__formulario">
-                            <legend>formulario</legend>
+                    <article>
+                        <h3  class="cuerpo__caja-formulario__subtitulo">formulario</h3>
+                        <form action="/submit" method="POST" class="cuerpo__caja-formulario__formulario">
                             <label class="cuerpo__caja-formulario__formulario__campos">
                                 nombre y apellidos
                                 <input type="text" name="nombre" class="cuerpo_">
@@ -65,11 +64,15 @@
                                 acepto los terminos de privacidad y condiciones de servicio
                                 <input type="checkbox" name="terminos" value="terminos">
                             </label>
-                            <input type="submit" name="enviar" value="enviar formulario">
-                            <input type="reset" name="borrar" value="borrar formulario">
-                        </fieldset>
-                    </form>
-                </article>
+                            <label class="cuerpo__caja-formulario__formulario__campo-comfirmacion">
+                                <input type="submit" name="enviar" value="enviar formulario">
+                            </label>
+                            <label class="cuerpo__caja-formulario__formulario__campo-comfirmacion">
+                                <input type="reset" name="borrar" value="borrar formulario">
+                            </label>
+                        </form>
+                    </article>
+                </section>
                 <nav class="cuerpo__redes">
                     <h3 class="cuerpo__redes__subtitulo">sigueme en mis redes sociales: </h3>
                     <a href="https://www.facebook.com/cesargabriel.ucha/"><img src="./assets/img/facebook_logo.png" alt="Facebook" class="cuerpo__redes__red"></a>
