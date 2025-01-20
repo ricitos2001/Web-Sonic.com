@@ -182,6 +182,7 @@ body{
 }
 
 .cuerpo__caja__subtitulo{
+    font-size: 2rem;
     padding: 2rem;
 }
 
@@ -189,7 +190,6 @@ body{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
-    font-weight: bold;
 }
 
 .cuerpo__caja__imagen-caja{
