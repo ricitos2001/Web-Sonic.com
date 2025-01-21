@@ -22,63 +22,65 @@
                         <i class="cabecera__navegador__icono-menu__barra3"></i>
                     </label>
                     <ul class="cabecera__navegador__enlaces">
-                        <li><a href="pagina_principal.html">pagina principal</a></li>
-                        <li><a href="pagina_de_productos.html">productos</a></li>
-                        <li><a href="pagina_de_contactos.html">pagina de contactos</a></li>
-                        <li><a href="pagina_adicional.html">contenido extra</a></li>
+                        <li><a href="pagina_principal.html">Pagina principal</a></li>
+                        <li><a href="pagina_de_productos.html">Productos</a></li>
+                        <li><a href="pagina_de_contactos.html">Pagina de contactos</a></li>
+                        <li><a href="pagina_adicional.html">Contenido extra</a></li>
                     </ul>
                 </nav>
             </header>
             <main class="cuerpo">
                 <h2 class="cuerpo__titulo">PAGINA DE CONTACTOS</h2>
-                <article class="cuerpo__caja-formulario">
-                    <a href="assets/img/sonic.gif"><img src="assets/img/sonic.gif" alt="Sonic Mania" class="cuerpo__caja-formulario__imagen-formulario"></a>
-                    <h3 class="cuerpo__caja-formulario__subtitulo">formulario</h3>
-                    <form action="/submit" method="POST" class="cuerpo__caja-formulario__formulario">
-                        <label class="cuerpo__caja-formulario__formulario__campos">
-                            nombre y apellidos
-                            <input type="text" name="nombre" class="cuerpo_">
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campos">
-                            edad
-                            <input type="number" name="edad">
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campos">
-                            fecha de nacimiento
-                            <input type="date" name="fecha">
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campos">
-                            genero
-                            <select name="genero">
-                                <option value="sin especificar">sin especificar</option>
-                                <option value="hombre">hombre</option>
-                                <option value="mujer">mujer</option>
-                            </select>
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campos">
-                            correo electronico
-                            <input type="text" name="correo">
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campo-termino">
-                            acepto los terminos de privacidad y condiciones de servicio
-                            <input type="checkbox" name="terminos" value="terminos">
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campo-comfirmacion">
-                            <input type="submit" name="enviar" value="enviar formulario">
-                        </label>
-                        <label class="cuerpo__caja-formulario__formulario__campo-comfirmacion">
-                            <input type="reset" name="borrar" value="borrar formulario">
-                        </label>
-                    </form>
-                </article>
-                <nav class="cuerpo__redes">
-                    <h3 class="cuerpo__redes__subtitulo">sigueme en mis redes sociales: </h3>
-                    <a href="https://www.facebook.com/cesargabriel.ucha/"><img src="./assets/img/facebook_logo.png" alt="Facebook" class="cuerpo__redes__red"></a>
-                    <a href="https://www.instagram.com/ricitos2001/"><img src="./assets/img/instagram_logo.png" alt="Instagram" class="cuerpo__redes__red"></a>
-                    <a href="https://x.com/UchaCesar"><img src="./assets/img/X_logo.png" alt="X" class="cuerpo__redes__red"></a>
-                    <a href="https://www.youtube.com/@ricitos2001"><img src="./assets/img/youtube_logo.png" alt="Youtube" class="cuerpo__redes__red"></a>
-                    <a href="https://github.com/ricitos2001"><img src="./assets/img/github_logo.png" alt="Github" class="cuerpo__redes__red"></a>
-                </nav>
+                <section class="cuerpo__seccion-formulario">
+                    <h3 class="cuerpo__seccion-formulario__subtitulo">formulario</h3>
+                    <article class="cuerpo__seccion-formulario__caja-formulario">
+                        <a href="assets/img/sonic.gif"><img src="assets/img/sonic.gif" alt="Sonic Mania" class="cuerpo__seccion-formulario__caja-formulario__imagen-formulario"></a>
+                        <form action="/submit" method="POST" class="cuerpo__seccion-formulario__caja-formulario__formulario">
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campos">
+                                Nombre y apellidos
+                                <input type="text" name="nombre" class="cuerpo_">
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campos">
+                                Edad
+                                <input type="number" name="edad">
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campos">
+                                Fecha de nacimiento
+                                <input type="date" name="fecha">
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campos">
+                                Genero
+                                <select name="genero">
+                                    <option value="sin especificar">Sin especificar</option>
+                                    <option value="hombre">Hombre</option>
+                                    <option value="mujer">Mujer</option>
+                                </select>
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campos">
+                                Correo electronico
+                                <input type="text" name="correo">
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campo-termino">
+                                Acepto los terminos de privacidad y condiciones de servicio
+                                <input type="checkbox" name="terminos" value="terminos">
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campo-comfirmacion">
+                                <input type="submit" name="enviar" value="enviar formulario">
+                            </label>
+                            <label class="cuerpo__seccion-formulario__caja-formulario__formulario__campo-comfirmacion">
+                                <input type="reset" name="borrar" value="borrar formulario">
+                            </label>
+                        </form>
+                    </article>
+                    <h3 class="cuerpo__seccion-formulario__subtitulo">sigueme en mis redes sociales: </h3>
+                    <nav class="cuerpo__seccion-formulario__redes">
+                        <a href="https://www.facebook.com/cesargabriel.ucha/"><img src="./assets/img/facebook_logo.png" alt="Facebook" class="cuerpo__redes__red"></a>
+                        <a href="https://www.instagram.com/ricitos2001/"><img src="./assets/img/instagram_logo.png" alt="Instagram" class="cuerpo__redes__red"></a>
+                        <a href="https://x.com/UchaCesar"><img src="./assets/img/X_logo.png" alt="X" class="cuerpo__redes__red"></a>
+                        <a href="https://www.youtube.com/@ricitos2001"><img src="./assets/img/youtube_logo.png" alt="Youtube" class="cuerpo__redes__red"></a>
+                        <a href="https://github.com/ricitos2001"><img src="./assets/img/github_logo.png" alt="Github" class="cuerpo__redes__red"></a>
+                    </nav>
+                </section>
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
