@@ -131,21 +131,30 @@ body{
 
 /**************************************************************************************************************************************************/
 
-.cuerpo{
+.cuerpo, .cuerpo3{
     display: flex;
     flex-direction: column;
-    height: 335rem;
+    height: auto;
     margin: 2rem;
     align-items:center;
     text-align: center;
 }
 
-.cuerpo__titulo{
+.cuerpo2{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 2rem;
+    align-items:center;
+    text-align: center;
+}
+
+.cuerpo__titulo, .cuerpo2__titulo, .cuerpo3__titulo{
     font-size: 4rem;
     color: var(--anti-flash-white);
 }
 
-.cuerpo__caja {
+.cuerpo__caja, .cuerpo3__caja {
     display: flex;
     flex-direction: column;
     width: 75%;
@@ -156,12 +165,12 @@ body{
     border-radius: 1rem;
 }
 
-.cuerpo__caja__subtitulo{
+.cuerpo__caja__subtitulo, .cuerpo3__caja__subtitulo{
     font-size: 2rem;
     padding: 2rem;
 }
 
-.cuerpo__caja__texto{
+.cuerpo__caja__texto, .cuerpo3__caja__texto{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
@@ -180,14 +189,14 @@ body{
     border-radius: 2rem;
 }
 
-.cuerpo__productos{
+.cuerpo2__productos{
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
 
-.cuerpo__productos__producto{
+.cuerpo2__productos__producto{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -201,18 +210,18 @@ body{
     border-radius: 1rem;
 }
 
-.cuerpo__productos__producto__imagen-producto{
+.cuerpo2__productos__producto__imagen-producto{
     padding: 2rem;
 }
 
-.cuerpo__productos__producto__imagen-producto__imagen{
+.cuerpo2__productos__producto__imagen-producto__imagen{
     min-width: 8rem;
     width: 100%;
     border: 0.5rem solid var(--maize);
     border-radius: 2rem;
 }
 
-.cuerpo__productos__producto__boton{
+.cuerpo2__productos__producto__boton{
     padding-top: 0.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -223,12 +232,12 @@ body{
     border-radius: 2rem;
 }
 
-.cuerpo__productos__producto__boton__nombre-producto{
+.cuerpo2__productos__producto__boton__nombre-producto{
     text-decoration: none;
     color:var(--anti-flash-white);
 }
 
-.cuerpo__informacion-producto{
+.cuerpo2__informacion-producto{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -240,38 +249,38 @@ body{
     border-radius: 1rem;
 }
 
-.cuerpo__informacion-producto__imagen-producto{
+.cuerpo2__informacion-producto__imagen-producto{
     padding-top: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
 }
 
-.cuerpo__informacion-producto__imagen-producto__imagen{
+.cuerpo2__informacion-producto__imagen-producto__imagen{
     width: 100%;
     border: 0.5rem solid var(--maize);
     border-radius: 2rem;
 }
 
-.cuerpo__informacion-producto__descripcion-producto{
+.cuerpo2__informacion-producto__descripcion-producto{
     display: flex;
     flex-direction: column;
     flex-direction: column;
     align-items: center;
 }
 
-.cuerpo__informacion-producto__descripcion-producto__nombre-producto{
+.cuerpo2__informacion-producto__descripcion-producto__nombre-producto{
     padding: 2rem;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.cuerpo__informacion-producto__descripcion-producto__descripcion{
+.cuerpo2__informacion-producto__descripcion-producto__descripcion{
     padding-right: 2rem;
     padding-left: 2rem;
     padding-bottom: 2rem;
 }
 
-.cuerpo__informacion-producto__boton{
+.cuerpo2__informacion-producto__boton{
     width: 4rem;
     margin-bottom: 2rem;
     padding-top: 0.25rem;
@@ -284,16 +293,15 @@ body{
     border-radius: 2rem;
 }
 
-.cuerpo__informacion-producto__boton__regreso{
+.cuerpo2__informacion-producto__boton__regreso{
     text-decoration: none;
     color:var(--anti-flash-white);
 }
 
-
 .cuerpo__seccion-formulario{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
     margin: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -322,7 +330,6 @@ body{
 
 .cuerpo__seccion-formulario__caja-formulario__imagen-formulario{
     width: 100%;
-    height: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -331,11 +338,10 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
     color: var(--erie-black);
     background-color: var(--anti-flash-white);
     border: 0.5rem solid var(--maize);
-    border-radius: 2rem; 
+    border-radius: 2rem;
 }
 
 .cuerpo__seccion-formulario__caja-formulario__formulario__campos{
@@ -385,7 +391,7 @@ body{
     height: 1rem;
 }
 
-@media(min-width:60rem){
+@media(min-width:50rem){
     .cabecera__navegador__icono-menu, .cabecera__navegador__icono-menu__barra1, .cabecera__navegador__icono-menu__barra2, .cabecera__navegador__icono-menu__barra3{
         display: none;
     }
@@ -410,22 +416,31 @@ body{
         color: var(--anti-flash-white);
     }
 
-    .cuerpo{
+    .cuerpo, .cuerpo2{
         display: flex;
         flex-direction: column;
-        height: 170rem;
+        height: 100%;
         margin: 2rem;
         align-items:center;
         text-align: center;
     }
 
-    .cuerpo__productos{
+    .cuerpo3{
+        display: flex;
+        flex-direction: column;
+        height: 43.28rem;
+        margin: 2rem;
+        align-items:center;
+        text-align: center;
+    }
+
+    .cuerpo2__productos{
         display: flex;
         flex-direction: row;
         width: 100%;
     }
     
-    .cuerpo__productos__producto{
+    .cuerpo2__productos__producto{
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -439,7 +454,7 @@ body{
         border-radius: 1rem;
     }
 
-    .cuerpo__informacion-producto{
+    .cuerpo2__informacion-producto{
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -451,13 +466,13 @@ body{
         border-radius: 1rem;
     }
 
-    .cuerpo__informacion-producto__imagen-producto{
+    .cuerpo2__informacion-producto__imagen-producto{
         padding-top: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
     }
     
-    .cuerpo__seccion-formulario{
+    .cuerpo2__seccion-formulario{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -471,14 +486,14 @@ body{
         border-radius: 1rem;
     }
 
-    .cuerpo__seccion-formulario__caja-formulario{
+    .cuerpo2__seccion-formulario__caja-formulario{
         display: flex;
         flex-direction: row;
         padding-top: 2rem;
         align-items: center;
     }
 
-    .cuerpo__seccion-formulario__caja-formulario__imagen-formulario{
+    .cuerpo2__seccion-formulario__caja-formulario__imagen-formulario{
         padding-right: 2rem;
     }
 }
