@@ -6,6 +6,7 @@
             <link rel="icon" sizes="64x64" href="./assets/img/OIF.ico">
             <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/OIF.ico">
             <link rel="stylesheet" href="css/styles.css">
+            <script src="js/index.js"></script>
             <title>Web-Sonic.com</title>
         </head>
         <body>
@@ -13,6 +14,8 @@
                 <article class="cabecera__portada">
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
+                    <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">

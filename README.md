@@ -26,6 +26,7 @@ Para visualizar la pagina web realize los siguientes pasos:
 15. Hacer que la pagina sea responsive
 16. Añadir transicciones
 17. Refactorizar los estilos para obtener un codigo mas limpio
+18. Crear el soporte para el modo oscuro
 
 Todo el procedimiento lo realize siguiendo la metodologia BEM que consiste en aplicar estilos CSS a todos los elementos de la pagina
 Ademas, mientras progresaba iba subiendo commits en un repositorio de github
@@ -36,3 +37,4 @@ Algunos detalles relevantes que hay en la pagina web son los siguientes:
 2. Las imagenes tienen diferentes formatos dependiendo de la pagina a las que se le ha asignado excepto la del logo de header y la del copyright del footer que tienen el mismo formato en todaas las paginas
 3. el menu hamburguesa aparece si la ventana del navegador es pequeña o si se esta utilizando algun dispositivo movil
 4. Cada una de las paginas web de los productos contiene una seccion de otros productos la cual contiene otros productos diferentes
+5. El boton oscuro funciona con javascript y al presionar el boton se aplica los estilos de una clase llamada "modo-oscuro"
