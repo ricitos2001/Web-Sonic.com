@@ -8,6 +8,7 @@ function activarModoOscuro() {
     }
 }
 
+/*
 // MODIFICAR EL CONTENIDO Y ATRIBUTOS DE ELEMENTOS EXISTENTES
 let eliminarPortada = document.querySelector(".cabecera__portada");
 eliminarPortada.innerHTML = '<img src="../assets/img/ring.png" alt="Ring" class="cabecera__logo"><h1></h1>';
@@ -41,6 +42,7 @@ console.log(agregarTexto)
 console.log(eliminarLabel)
 console.log(eliminarBoton)
 console.log(logo2)
+*/
 
 /*
 Los lenguajes de script del cliente se ejecutan en un navegador y permiten mejorar las interacciones, el diseño y las funciones de una pagina web
