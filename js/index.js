@@ -9,59 +9,50 @@ function activarModoOscuro() {
 }
 
 /*
-// MODIFICAR EL CONTENIDO Y ATRIBUTOS DE ELEMENTOS EXISTENTES
-let eliminarPortada = document.querySelector(".cabecera__portada");
-eliminarPortada.innerHTML = '<img src="../assets/img/ring.png" alt="Ring" class="cabecera__logo"><h1></h1>';
-
-// CREAR Y AÑADIR NUEVOS ELEMENTOS DINAMICAMENTE
-let agregarTexto = document.querySelector("h1")
-agregarTexto.innerText = 'Web-Sonic.com'
-
-// ELIMINAR ELEMENTOS DE LA PAGINA SEGUN CRITERIOS ESPECIFICOS\\
 let eliminarLabel = document.querySelector(".cabecera__modo-oscuro")
 let eliminarBoton = document.querySelector(".cabecera__boton-modo-oscuro")
-
 eliminarLabel.remove()
 eliminarBoton.remove()
-
-// MANIPULAR ESTILOS DIRECTAMENTE USANDO JAVASCRIPT // [COMPLETADO]
-let logo2 = document.querySelector(".cabecera__logo")
-logo2.setAttribute("class", "cabecera__logo2")
-
-logo2.style.setProperty("width", "5rem");
-logo2.style.setProperty("height", "5rem");
-logo2.style.setProperty("padding", "1rem");
-
-logo2.style.getPropertyValue("width");
-logo2.style.getPropertyValue("height")
-logo2.style.getPropertyValue("padding")
-
-// SELECCIONAR Y ACCEDER A ELEMENTOS DEL DOCUMENTO
-console.log(eliminarPortada)
-console.log(agregarTexto)
-console.log(eliminarLabel)
-console.log(eliminarBoton)
-console.log(logo2)
 */
 
 /*
-Los lenguajes de script del cliente se ejecutan en un navegador y permiten mejorar las interacciones, el diseño y las funciones de una pagina web
-sin tener que comunicarse con el servidor.
-algunos de los lenguajes mas usados son: JavaScript (JS), TypeScript (TS), Dart.
+let modificarPie = document.querySelector(".pie")
+modificarPie.innerHTML = '<h4></h4><img src="../assets/img/copyright.png" alt="Logo" class="pie__copyright" id="pie__copyright"/>'
+*/
 
-existen otros lenguajes de script que pueden ser alternativos o experimentales como CoffeScript, Elm, ReasonML
-ademas de lenguajes adaptados al frontend como Python o Ruby
+/*
+let agregarTextoPie = document.querySelector("h4")
+agregarTextoPie.innerText = 'Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)'
+*/
 
-Caracteristicas principales de Javascript
-JavaScript es el lenguaje de script mas utilizado y con un amplio soporte ya dia de hoy sigue evolucionando con nuevas versiones de ECMAScript (ES6+) lo cual mantiente este lenguaje como la opcion principal para el desarollo web en el lado del cliente
+/*
+let modificarPortada = document.querySelector(".cabecera__portada");
+modificarPortada.innerHTML = '<img src="../assets/img/ring.png" alt="Ring" class="cabecera__logo"/><h1></h1>';
+*/
 
-algunas de sus caracteristicas son:
-    Es interpretado y dinámico por lo que se ejecuta directamente en el navegador sin necesidad de compilación.
-    Es orientado a objetos lo cual permite crear objetos y heredar de otros sin necesidad de clases.
-    Es compatible con HTML y CSS por lo que se puede manipular el DOM y modificar estilos dinámicamente.
-    Es multiparadigma por lo que soporta programación imperativa, funcional y orientada a objetos.
-    Es Asíncrono y basado en eventos por lo que usa mecanismos como callbacks, promesas y async/await para manejar operaciones no bloqueantes.
-    Soportado para módulos por lo que nos permite dividir el código en archivos reutilizables (import/export).
-    Es de ecosistema amplio por lo qu tiene una gran cantidad de frameworks y librerías como React, Angular, Vue.js, Node.js.
-    Tiene compatibilidad con APIs modernas por lo que puede acceder a funciones como geolocalización, almacenamiento local, manipulación de multimedia y WebSockets.
+/*
+let agregarTextoPortada = document.querySelector("h1")
+agregarTextoPortada.textContent = 'Web-Sonic.com'
+*/
+
+/*
+let logo2 = document.getElementsByTagName("img")
+logo2.setAttribute("class", "cabecera__logo2")
+
+logo2.style.setProperty("width", "5rem");
+logo2.style.getPropertyValue("width");
+
+logo2.style.setProperty("height", "5rem");
+logo2.style.getPropertyValue("height")
+
+logo2.style.setProperty("padding", "1rem");
+logo2.style.getPropertyValue("padding")
+*/
+
+/*
+console.log(modificarPortada)
+console.log(copyrightModoOscuro)
+console.log(agregarTextoPortada)
+console.log(eliminarBoton)
+console.log(logo2)
 */

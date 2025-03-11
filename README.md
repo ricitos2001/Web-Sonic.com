@@ -38,3 +38,45 @@ Algunos detalles relevantes que hay en la pagina web son los siguientes:
 3. el menu hamburguesa aparece si la ventana del navegador es pequeña o si se esta utilizando algun dispositivo movil
 4. Cada una de las paginas web de los productos contiene una seccion de otros productos la cual contiene otros productos diferentes
 5. El boton oscuro funciona con javascript y al presionar el boton se aplica los estilos de una clase llamada "modo-oscuro"
+
+## Cambios realizados
+### Pequeña introduccion a JavaScript
+Los lenguajes de script del cliente se ejecutan en un navegador y permiten mejorar las interacciones, el diseño y las funciones de una pagina web
+sin tener que comunicarse con el servidor.
+algunos de los lenguajes mas usados son: JavaScript (JS), TypeScript (TS), Dart.
+
+existen otros lenguajes de script que pueden ser alternativos o experimentales como CoffeScript, Elm, ReasonML
+ademas de lenguajes adaptados al frontend como Python o Ruby
+
+Caracteristicas principales de Javascript
+JavaScript es el lenguaje de script mas utilizado y con un amplio soporte ya dia de hoy sigue evolucionando con nuevas versiones de ECMAScript (ES6+) lo cual mantiente este lenguaje como la opcion principal para el desarollo web en el lado del cliente
+
+algunas de sus caracteristicas son:
+- Es interpretado y dinámico por lo que se ejecuta directamente en el navegador sin necesidad de compilación.
+- Es orientado a objetos lo cual permite crear objetos y heredar de otros sin necesidad de clases.
+- Es compatible con HTML y CSS por lo que se puede manipular el DOM y modificar estilos dinámicamente.
+- Es multiparadigma por lo que soporta programación imperativa, funcional y orientada a objetos.
+- Es Asíncrono y basado en eventos por lo que usa mecanismos como callbacks, promesas y async/await para manejar operaciones no bloqueantes.
+- Soportado para módulos por lo que nos permite dividir el código en archivos reutilizables (import/export).
+- Es de ecosistema amplio por lo qu tiene una gran cantidad de frameworks y librerías como React, Angular, Vue.js, Node.js.
+- Tiene compatibilidad con APIs modernas por lo que puede acceder a funciones como geolocalización, almacenamiento local, manipulación de multimedia y WebSockets.
+
+### Visualizacion de los nuevos elementos del proyecto
+He modificado el archivo index.js que esta dentro de la carpeta de Javascript con varios scripts comentados
+Si quitas la comentacion estos scripts cambiaran la pagina web de la siguiente manera:
+- el gif del anillo se remplaza por una imagen del mismo por lo que deja de estar animado
+- el simbolo del copyright pasa a ser de color blanco
+- el boton para habilitar el modo oscuro se borra
+
+#### elementos añadidos
+los elementos añadidos son los siguientes:
+- eliminarBoton: elemento que elimina el boton del moso oscuro
+- eliminarLabel: elemento que elimina solo el texto que pone 'activar modo oscruo'
+- modificarPie: elemento que remplaza el simbolo del copyrignt negro por un simbolo de color blanco
+- agregarTextoPie: elemento que añade texto al pie de pagina. Para ello utiliza la etiqueta `textContent`
+- modificarPortada: elemento que modifica la portada remplazando el gif del anillo por una imagen del mismo. Para ello se utiliza la etiqueta `innerHTML` y añadiendo un h1 y se elimina el boton que activa el modo oscuro
+- agregarTextoPortada: elemento que agrega un titulo a la pagina web seleccionando el elemento h1 añadido por el elemento modificarPortada. Para ello utiliza la etiqueta `innerText`
+- logo2: elemento que modifica los estilos de la imagen del anillo ajustando su tamaño al del gif del anillo sin utilizar css
+todos los elementos acceden a los elementos del HTML utilizando `querySelector` y todos ellos se muestran en la consola del navegador mediante el uso del `console.log('nombre del elemento')`
+
+NOTA: recomiendo ir descomentando los elementos desde arriba hasta abajo y no en un orden aleatorio para ver su correcto funcionamiento
