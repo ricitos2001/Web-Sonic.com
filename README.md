@@ -21,12 +21,12 @@ Para visualizar la pagina web realize los siguientes pasos:
 11. Aplicar los estilos en la pagina de productos
 12. Crear mas archivos de HTML para cada producto que haya en el main de la pagina de productos
 13. Añadir informacion sobre el producto de cada pagina ademas de imagenes visuales
-14. Aplicar los estilos de cada una de las paginas de los productos
-17. Aplicar los estilos al formulario
-15. Hacer que la pagina sea responsive
-16. Añadir transicciones
-17. Refactorizar los estilos para obtener un codigo mas limpio
-18. Crear el soporte para el modo oscuro
+14. Aplicar los estilos de cada una de las paginas de los productos 
+15. Aplicar los estilos al formulario 
+16. Hacer que la pagina sea responsive 
+17. Añadir transicciones 
+18. Refactorizar los estilos para obtener un codigo mas limpio 
+19. Crear el soporte para el modo oscuro
 
 Todo el procedimiento lo realize siguiendo la metodologia BEM que consiste en aplicar estilos CSS a todos los elementos de la pagina
 Ademas, mientras progresaba iba subiendo commits en un repositorio de github
@@ -67,16 +67,32 @@ Si quitas la comentacion estos scripts cambiaran la pagina web de la siguiente m
 - el gif del anillo se remplaza por una imagen del mismo por lo que deja de estar animado
 - el simbolo del copyright pasa a ser de color blanco
 - el boton para habilitar el modo oscuro se borra
+- el contenido del footer se modifica
 
-#### elementos añadidos
-los elementos añadidos son los siguientes:
-- eliminarBoton: elemento que elimina el boton del moso oscuro
-- eliminarLabel: elemento que elimina solo el texto que pone 'activar modo oscruo'
-- modificarPie: elemento que remplaza el simbolo del copyrignt negro por un simbolo de color blanco
-- agregarTextoPie: elemento que añade texto al pie de pagina. Para ello utiliza la etiqueta `textContent`
-- modificarPortada: elemento que modifica la portada remplazando el gif del anillo por una imagen del mismo. Para ello se utiliza la etiqueta `innerHTML` y añadiendo un h1 y se elimina el boton que activa el modo oscuro
-- agregarTextoPortada: elemento que agrega un titulo a la pagina web seleccionando el elemento h1 añadido por el elemento modificarPortada. Para ello utiliza la etiqueta `innerText`
-- logo2: elemento que modifica los estilos de la imagen del anillo ajustando su tamaño al del gif del anillo sin utilizar css
-todos los elementos acceden a los elementos del HTML utilizando `querySelector` y todos ellos se muestran en la consola del navegador mediante el uso del `console.log('nombre del elemento')`
-
-NOTA: recomiendo ir descomentando los elementos desde arriba hasta abajo y no en un orden aleatorio para ver su correcto funcionamiento
+### ¿Como lo hice?
+1. Eliminar el label del boton. 
+   - Para ello declaramos una variable con `let` y el nombre que le queramos poner y despues utilizamos el `querySelector` y dentro de los parentesis ponemos el nombre de la clase del label. Quedaria asi: `let elimnarLabel = document.querySelector(".cabecera__modo-oscuro")`
+   - Despues utilizamos `remove()` para eliminar el label. Quedaria asi `eliminarLabel.remove()`
+2. Eliminar el boton. 
+   - Para ello declaramos otra variable con `let` y el nombre que le queramos poner y despues utilizamos el `querySelector` y dentro de los parentesis ponemos el nombre de la clase del boton. Quedaria asi: `let elimnarBoton = document.querySelector(".cabecera__boton-modo-oscuro")`
+   - Despues utilizamos otro `remove()` para eliminar el boton. Quedaria asi: `eliminarBoton.remove()`
+3. Añadir nueva portada.
+   - Para ello declaramos otra variable con `let` y el nombre que le queramos poner y despues utilizamos el `querySelector` y dentro de los parentesis ponemos el nombre de la clase de la cabecera. Quedaria asi: `let modificarPortada = document.queriSelector(".cabecera__portada")`
+   - Despues utilizamos la etiqueta `innerHTML` para agregar una etiqueta de imagen y una etiqueta de titulo. Quedaria asi: `modificarPortada.innerHTML = '<img src="../assets/img/ring.png" alt="Ring" class="cabecera__logo"/><h1></h1>'`
+   - Declaramos otra variable con `let` y volvemos a utilizar el `querySelector` para seleccionar la etiqueta h1 que hemos creado. Quedaria asi: `let agregarTextoPortada = document.querySelector("h1")`
+   - Por ultimo utilizamos la etiqueta `textContent` para añadir texto. Quedaria Asi: `agregarTextoPortada.textContent = 'Web-Sonic.com'`
+4. Eliminar contenido del pie de pagina.
+   - Para ello declaramos otra variable con `let` y el nombre que le queramos poner y despues utilizamos el `querySelector` y dentro de los parentesis ponemos el nombre de la clase del pie de cabecera. Quedaria asi: `let modificarPie = document.querySelector(".pie")`
+   - Declaramos otra variable con `let` y volvemos a utilizar el `querySelector` para seleccionar la etiqueta h4 que esta dentro del footer. Quedaria asi: `let texto = document.querySelector("h4")`
+   - Despues utilizamos `removeChild()` para eliminar al h4 que este dentro. Quedaria asi: `modificarPie.removeChild(texto)`
+5. Añadir nuevo contenido al pie de pagina
+   - Utilizamos la etiqueta `innerHTML` para agregar una etiqueta h4. Quedaria asi: `modificarPie.innerHTML = '<h4></h4>'`
+   - Declaramos otra variable con `let` y el nombre que le queramos poner y despues utilizamos el `createElement` y dentro de los parentesis ponemos una etiqueta de imagen para crear asi un elemento de imagen. quedaria Asi: `let img = document.createElement("img")`
+   - Asignamos los valores al elemento:
+     - Src: `img.src = "../assets/img/copyright.png"`
+     - Alt: `img.alt = "Logo"`
+     - Nombre de la clase: `img.className = "pie__copyright2"`
+   - Asignamos los estilos de la clase con la etiqueta `style`
+     - Anchura: `img.style.setProperty("width", "1rem")` y luego `img.style.getPropertyValue("width")`
+     - Altura: `img.style.setProperty("height", "1rem")` y luego `img.style.getPropertyValue("height")`
+   - Por ultimo utilizamos la etiqueta `appendchild()` para añadir el elemento de imagen al footer. Quedaria asi: `modificarPie.appendChild(img)`
