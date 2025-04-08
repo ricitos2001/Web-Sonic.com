@@ -9,7 +9,6 @@ modificarPortada.innerHTML = '<img src="../assets/img/ring.png" alt="Ring" class
 let agregarTextoPortada = document.querySelector("h1");
 agregarTextoPortada.textContent = 'Web-Sonic.com';
 
-
 let modificarPie = document.querySelector(".pie");
 
 let texto = document.querySelector("h4");
@@ -41,3 +40,18 @@ function activarModoOscuro() {
         console.log("NOT checked");
     }
 }
+
+//FUNCIONES PARA AÑADIR O QUITAR UNA IMAGEN DE PERFIL\\
+
+//FUNCIONES PARA HACER QUE EL FORMULARIO SEA FUNCIONAL Y TENGA VALIDACION DINAMICA\\
+
+//SISTEMA QUE FILTRE EL CONTENIDO DE LA PAGINA WEB BUSCANDO UNA PALABRA\\
+
+//CARRITO DE LA COMPRA (NO SE SI DA EL PEGO CON LO QUE HE HECHO)\\
+
+/*
+* Crear un sistema de galería interactiva donde las imágenes puedan añadirse o eliminarse dinámicamente.
+* Diseñar un formulario con validación dinámica que muestre mensajes de error o éxito según la interacción del usuario.
+* Implementar un sistema de filtros que permita mostrar u ocultar elementos de la página (por ejemplo, productos o entradas de blog) según criterios seleccionados por el usuario.
+* Crear un flujo libre del proyecto. (por ejemplo proceso de incluir productos al carrito de compra.)
+* */
