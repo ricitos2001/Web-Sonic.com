@@ -26,8 +26,9 @@
                     <ul class="cabecera__enlaces">
                         <li><a href="pagina_principal.html">Pagina principal</a></li>
                         <li><a href="pagina_de_productos.html">Productos</a></li>
-                        <li><a href="pagina_de_contactos.html">Pagina de contactos</a></li>
+                        <li><a href="pagina_de_contactos.html">Contacto</a></li>
                         <li><a href="pagina_adicional.html">Contenido extra</a></li>
+                        <li><a href="pagina_del_carrito.html">Carrito</a></li>
                     </ul>
                 </nav>
             </header>
@@ -37,34 +38,54 @@
                     <h3 class="cuerpo__subtitulo-formulario">Formulario</h3>
                     <article class="cuerpo__caja-formulario">
                         <a href="assets/img/sonic.gif"><img src="assets/img/sonic.gif" alt="Sonic Mania" class="cuerpo__imagen-formulario"></a>
-                        <form action="/submit" method="POST" class="cuerpo__formulario">
-                            <label class="cuerpo__campos">Nombre y apellidos</label>
-                            <input type="text" name="nombre" placeholder="Escribe aqui tu nombre y apellidos" class="cuerpo__input">
-                            <label class="cuerpo__campos">Edad</label>
-                            <input type="number" name="edad" placeholder="Escribe aqui tu tu edad" class="cuerpo__input">
-                            <label class="cuerpo__campos">Fecha de nacimiento</label>
-                            <input type="date" name="fecha" class="cuerpo__input">
-                            <label class="cuerpo__campos">Genero</label>
-                            <select name="genero" class="cuerpo__input">
+                        <form id="cuerpo__formulario" action="/submit" method="POST" class="cuerpo__formulario">
+                            <!--AGREGAR UN ELEMENTO DE IMAGEN Y UNA NUEVA LINEA-->
+
+                            <label for="nombre" class="cuerpo__campos">Nombre y apellidos</label>
+                            <input type="text" name="nombre" placeholder="Escribe aqui tu nombre y apellidos" class="cuerpo__input" id="nombre">
+                            <label for="edad" class="cuerpo__campos">Edad</label>
+                            <input type="number" name="edad" placeholder="Escribe aqui tu tu edad" class="cuerpo__input" id="edad">
+                            <label for="fecha-de-nacimiento" class="cuerpo__campos">Fecha de nacimiento</label>
+                            <input type="date" name="fecha" class="cuerpo__input" id="fecha-de-nacimiento">
+                            <label for="genero" class="cuerpo__campos">Genero</label>
+                            <select name="genero" class="cuerpo__input" id="genero">
                                 <option value="sin especificar" class="cuerpo__input">Sin especificar</option>
                                 <option value="hombre" class="cuerpo__input">Hombre</option>
                                 <option value="mujer" class="cuerpo__input">Mujer</option>
                             </select>
-                            <label class="cuerpo__campos">Correo electronico</label>
-                            <input type="text" name="correo" placeholder="Escribe aqui tu correo electronico" class="cuerpo__input">
-                            <label class="cuerpo__campo-termino">Acepto los terminos de privacidad y condiciones de servicio</label>
-                            <input type="checkbox" name="terminos">
-                            <label class="cuerpo__campo-comfirmacion"></label>
-                            <input type="submit" name="enviar" value="enviar formulario" class="cuerpo__input">
-                            <label class="cuerpo__campo-comfirmacion"></label>
-                            <input type="reset" name="borrar" value="borrar formulario" class="cuerpo__input">
+
+                            <label for="apodo" class="cuerpo__campos"></label>
+                            <input type="text" name="apodo" placeholder="Escribe aqui tu apodo" class="cuerpo__input" id="apodo">
+                            <!--img src="./assets/img/default-sonic-image-profile.jpg" alt="imagen-de-usuario" class="cuerpo__imagen-de-perfil" id="imagen-de-perfil">
+                            <div class="cuerpo__contenedor">
+                                <button class="cuerpo__input" id="subir-imagen">Agregar Imagen</button>
+                                <button class="cuerpo__input" id="eliminar-imagen">Eliminar Imagen</button>
+                            </div-->
+
+                            <label for="correo" class="cuerpo__campos">Correo electronico</label>
+                            <input type="text" name="correo" placeholder="Escribe aqui tu correo electronico" class="cuerpo__input" id="correo">
+
+
+                            <label for="contraseña" class="cuerpo__campos">Contraseña</label>
+                            <input type="password" name="contraseña" placeholder="Escribe aqui tu contraseña" class="cuerpo__input" id="contraseña">
+                            <label for="repetir-contraseña" class="cuerpo__campos">Contraseña</label>
+                            <input type="password" name="repetir-contraseña" placeholder="Repite aqui tu contraseña" class="cuerpo__input" id="repetir-contraseña">
+
+                            <label for="terminos" class="cuerpo__campo-termino">Acepto los terminos de privacidad y condiciones de servicio</label>
+                            <input type="checkbox" name="terminos" id="terminos">
+
+
+                            <label for="envio" class="cuerpo__campo-comfirmacion"></label>
+                            <input type="submit" name="enviar" value="enviar formulario" class="cuerpo__input" id="envio">
+                            <label for="reseteo" class="cuerpo__campo-comfirmacion"></label>
+                            <input type="reset" name="borrar" value="borrar formulario" class="cuerpo__input" id="reseteo">
                         </form>
                     </article>
                     <h3 class="cuerpo__subtitulo-red">sigueme en mis redes sociales: </h3>
                     <nav>
-                        <a href="https://www.facebook.com/cesargabriel.ucha/"><img src="./assets/img/facebook_logo.png" alt="Facebook" class="cuerpo__red"></a>
-                        <a href="https://www.instagram.com/ricitos2001/"><img src="./assets/img/instagram_logo.png" alt="Instagram" class="cuerpo__red"></a>
-                        <a href="https://x.com/UchaCesar"><img src="./assets/img/X_logo.png" alt="X" class="cuerpo__red"></a>
+                        <a href=""><img src="./assets/img/facebook_logo.png" alt="Facebook" class="cuerpo__red"></a>
+                        <a href=""><img src="./assets/img/instagram_logo.png" alt="Instagram" class="cuerpo__red"></a>
+                        <a href=""><img src="./assets/img/X_logo.png" alt="X" class="cuerpo__red"></a>
                         <a href="https://www.youtube.com/@ricitos2001"><img src="./assets/img/youtube_logo.png" alt="Youtube" class="cuerpo__red"></a>
                         <a href="https://github.com/ricitos2001"><img src="./assets/img/github_logo.png" alt="Github" class="cuerpo__red"></a>
                     </nav>
@@ -72,7 +93,7 @@
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
