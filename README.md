@@ -96,3 +96,36 @@ Si quitas la comentacion estos scripts cambiaran la pagina web de la siguiente m
      - Anchura: `img.style.setProperty("width", "1rem")` y luego `img.style.getPropertyValue("width")`
      - Altura: `img.style.setProperty("height", "1rem")` y luego `img.style.getPropertyValue("height")`
    - Por ultimo utilizamos la etiqueta `appendchild()` para añadir el elemento de imagen al footer. Quedaria asi: `modificarPie.appendChild(img)`
+
+## Nuevos cambios de la parte 3 del proyecto
+### modificaciones en el formulario
+he modificado el formulario de forma que hace lo siguiente:
+1. si el campo nombre esta vacio mostrara un mensaje de error
+2. si el campo edad esta vacio mostrara un mensaje de error
+3. si el campo fecha esta vacio mostrara un mensaje de error
+4. si el campo apodo esta vacio mostrara un mensaje de error
+5. si el campo correo esta vacio mostrara un mensaje de error
+6. si la contraseña del campo contraseña esta vacio o tiene menos de 8 digitos mostrará un mensaje de error diciendo que debe tener al menos 8 digitos
+7. si la contraseña del campo repetir contraseña tiene una contraseña diferente a la que has puesto en el campo contraseña mostrara un mensaje de error
+8. si no has aceptado los terminos de privacidad te mostrara un mensaje de error
+en caso de que hayas rellenado todos los campos correctamente mostrara un mensaje diciendo que el formulario ha sido enviado con exito
+
+### galeria interactiva agregada
+He modificado la página adicional para agregarle una galeria interactiva que nos permite agregar imagenes por url y quitarlas
+
+### filtros en los productos
+He modificado la página de productos para añadir una serie de filtros que cambiaran el orden en el que se muestran los productos
+1. Mostrar por encima los elementos por defecto con posición par: si pulsas este boton los productos que por defecto tienen una posicion par se mostraran encima y los que tiene una posicion impar se mostraran debajo
+2. Mostrar por encima los elementos por defecto con posición impar: si pulsas este boton los productos que por defecto tienen una posicion impar se mostraran encima y los que tiene una posicion par se mostraran debajo
+3. Mostrar por orden de lanzamiento: si pulsas este boton se mostrarán los productos en el siguiente orden: del más reciente al más antiguo
+4. Restaurar orden por defecto: si pulsas este boton se restaurará el orden por defecto
+
+### pestaña de carrito
+He agregado una nueva pagina del carrito en la que podemos almacenar los productos que queramos
+1. vamos a la pestaña de productos y accedemos a cualquier producto que queramos
+2. cuando hayamos accedido a un producto veremos que aparece un segundo boton en el cual pone `agregar al carrito`
+3. si hacemos click en el boton almacenaremos el producto en el carrito
+4. vamos a la pestaña de carrito la cual muestra todos los productos que hay y la cantidad del producto que nosotros hayamos seleccionado en el carrito
+5. si le damos al boton de eliminar producto eliminaremos el producto de nuestro carrito
+6. si nos vamos abajo del todo veremos que hay un bloque en el cual aparece el precio total y la cantidad de prodeuctos seleccionada
+7. si le damos a confirmar compra nos aparecera un mensaje que nos dira que la compra ha sido realizada con exito

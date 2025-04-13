@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -26,20 +26,91 @@
                     <ul class="cabecera__enlaces">
                         <li><a href="pagina_principal.html">Pagina principal</a></li>
                         <li><a href="pagina_de_productos.html">Productos</a></li>
-                        <li><a href="pagina_del_carrito.html">Compra</a></li>
                         <li><a href="pagina_de_contactos.html">Contacto</a></li>
                         <li><a href="pagina_adicional.html">Contenido extra</a></li>
+                        <li><a href="pagina_del_carrito.html">Carrito</a></li>
                     </ul>
                 </nav>
             </header>
-            <main class="cuerpo3">
-                <h2 class="cuerpo3__titulo">CARRITO DE LA COMPRA</h2>
+            <main class="cuerpo2">
+                <h2 class="cuerpo2__titulo">PAGINA DE PRODUCTOS</h2>
+                <section class="cuerpo2__productos">
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_frontiers.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_frontiers.jpg" alt="Sonic Frontiers" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic Frontiers</p>
+                        <p id="contador1"></p>
+                        <p>Precio: <span id="precio-producto1">59.99</span>€</p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto1">Eliminar Producto</button>
+                    </article>
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_x_shadow_generations.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_x_shadow_generations.jpg" alt="Sonic X Shadow Generations" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic x Shadow generations</p>
+                        <p id="contador2"></p>
+                        <p>Precio: <span id="precio-producto2">49.99</span>€</p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto2">Eliminar Producto</button>
+                    </article>
+                </section>
+                <section class="cuerpo2__productos">
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_colors.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_colors.jpg" alt="Sonic Colors" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic colors</p>
+                        <p id="contador3"></p>
+                        <p>Precio: <span id="precio-producto3">39.99</span>€</p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto3">Eliminar Producto</button>
+                    </article>
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_lost_world.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_lost_world.jpg" alt="Sonic Lost World" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic lost world</p>
+                        <p id="contador4"></p>
+                        <p>Precio: <span id="precio-producto4"></span>29.99€</p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto4">Eliminar Producto</button>
+                    </article>
+                </section>
+                <section class="cuerpo2__productos">
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_unleashed.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_unleashed.jpg" alt="Sonic Unleashed" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic unleashed</p>
+                        <p id="contador5"></p>
+                        <p>Precio: <span id="precio-producto5">29.99</span>€</p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto5">Eliminar Producto</button>
+                    </article>
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_mania.png" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_mania.png" alt="Sonic Mania" class="cuerpo2__imagen2"></a>
+                        <p>Nombre: Sonic mania</p>
+                        <p>Precio: <span id="precio-producto6">19.99</span>€</p>
+                        <p id="contador6"></p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto6">Eliminar Producto</button>
+                    </article>
+                </section>
+                <section class="cuerpo2__productos">
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_superstars.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_superstars.jpg" alt="Sonic Superstars" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic superstars</p>
+                        <p>Precio: <span id="precio-producto7">59.99</span>€</p>
+                        <p id="contador7"></p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto7">Eliminar Producto</button>
+                    </article>
+                    <article class="cuerpo2__producto">
+                        <a href="assets/img/sonic_forces.jpg" class="cuerpo2__imagen-producto"><img src="assets/img/sonic_forces.jpg" alt="Sonic Forces" class="cuerpo2__imagen2"></a>
+                        <p>nombre: Sonic forces</p>
+                        <p>Precio: <span id="precio-producto8">39.99</span>€</p>
+                        <p id="contador8"></p>
+                        <button class="cuerpo4__boton-producto" id="boton-producto8">Eliminar Producto</button>
+                    </article>
+                </section>
+                <article class="cuerpo2__producto" id="producto">
+                    <p>Total de productos comprados: <span id="cantidad-total"></span></p>
+                    <p>precio total: <span id="precio-total"></span>€</p>
+                    <button class="cuerpo4__boton-producto" id="boton-compra">Realizar Compra</button>
+                </article>
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
         <script src="js/index.js"></script>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/carrito.js"></script>
     </html>

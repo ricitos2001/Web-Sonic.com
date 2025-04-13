@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -34,12 +34,15 @@
             </header>
             <main class="cuerpo2">
                 <section class="cuerpo2__informacion-producto">
-                    <a href="assets/img/sonic_forces.jpg"><img src="assets/img/sonic_forces.jpg" alt="Sonic Forces" class="cuerpo2__imagen-informacion-producto"></a>
+                    <a href="assets/img/sonic_forces.jpg"><img src="assets/img/sonic_forces.jpg" alt="Sonic Forces" class="cuerpo2__imagen-informacion-producto" id="imagen-producto"></a>
                     <article class="cuerpo2__descripcion-producto">
-                        <h3 class="cuerpo2__nombre-producto">Sonic forces</h3>
+                        <h3 class="cuerpo2__nombre-producto" id="nombre-producto">Sonic forces</h3>
                         <p class="cuerpo2__descripcion">Sonic Forces es un videojuego de plataformas de la serie Sonic the Hedgehog desarrollado por Sonic Team y publicado por Sega. Fue lanzado en Europa y en Norte América el 7 de Noviembre de 2017 y el 9 de noviembre del mismo año en Japón para las plataformas PC, Nintendo Switch, PlayStation 4, Xbox One, iOS y Android. Sonic Forces sigue a Sonic the Hedgehog cuando se une a una fuerza de resistencia contra el Dr. Eggman, quien se ha apoderado del mundo con la ayuda de su ejército, secuaces y un misterioso y nuevo villano conocido como Infinite.</p>
                         <p class="cuerpo2__descripcion">El juego marca el regreso de la colaboración entre Classic Sonic y Modern Sonic, junto con sus estilos de juego asociados, desde el juego del vigésimo aniversario Sonic Generations (aunque no es una secuela de ningún juego anterior). Además, Sonic Forces también introduce un tercer modo de juego presentando al "Avatar", el personaje creado por el jugador. El juego sirve, junto con Sonic Mania, como una "continuación" del 25 aniversario de Sonic.</p>
-                        <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                        <div class="cuerpo2__div">
+                            <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                            <p><a class="cuerpo2__boton-regreso" id="añadir-al-carrito">Añadir al carrito</a></p>
+                        </div>
                     </article>
                 </section>
                 <h2 class="cuerpo2__titulo">OTROS PRODUCTOS</h2>
@@ -66,9 +69,11 @@
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
         <script src="js/index.js"></script>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/agregacion_de_productos.js"></script>
     </html>

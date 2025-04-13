@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -40,41 +40,63 @@
                         <a href="assets/img/sonic.gif"><img src="assets/img/sonic.gif" alt="Sonic Mania" class="cuerpo__imagen-formulario"></a>
                         <form id="cuerpo__formulario" action="/submit" method="POST" class="cuerpo__formulario">
                             <!--AGREGAR UN ELEMENTO DE IMAGEN Y UNA NUEVA LINEA-->
+                            <article class="cuerpo__campos" id="campo-nombre">
+                                <label for="nombre" class="cuerpo__labels">Nombre y apellidos</label>
+                                <input type="text" name="nombre" placeholder="Escribe aqui tu nombre y apellidos" class="cuerpo__input" id="nombre">
+                                <p id="texto-nombre"></p>
+                            </article>
+                            <article class="cuerpo__campos" id="campo-edad">
+                                <label for="edad" class="cuerpo__labels">Edad</label>
+                                <input type="number" name="edad" placeholder="Escribe aqui tu tu edad" class="cuerpo__input" id="edad">
+                                <p id="texto-edad"></p>
+                            </article>
+                            <article class="cuerpo__campos" id="campo-fecha">
+                                <label for="fecha-de-nacimiento" class="cuerpo__labels">Fecha de nacimiento</label>
+                                <input type="date" name="fecha" class="cuerpo__input" id="fecha-de-nacimiento">
+                                <p id="texto-fecha"></p>
+                            </article>
+                            <article class="cuerpo__campos" id="campo-genero">
+                                <label for="genero" class="cuerpo__labels">Genero</label>
+                                <select name="genero" class="cuerpo__input" id="genero">
+                                    <option value="sin especificar" class="cuerpo__input">Sin especificar</option>
+                                    <option value="hombre" class="cuerpo__input">Hombre</option>
+                                    <option value="mujer" class="cuerpo__input">Mujer</option>
+                                </select>
+                            </article>
 
-                            <label for="nombre" class="cuerpo__campos">Nombre y apellidos</label>
-                            <input type="text" name="nombre" placeholder="Escribe aqui tu nombre y apellidos" class="cuerpo__input" id="nombre">
-                            <label for="edad" class="cuerpo__campos">Edad</label>
-                            <input type="number" name="edad" placeholder="Escribe aqui tu tu edad" class="cuerpo__input" id="edad">
-                            <label for="fecha-de-nacimiento" class="cuerpo__campos">Fecha de nacimiento</label>
-                            <input type="date" name="fecha" class="cuerpo__input" id="fecha-de-nacimiento">
-                            <label for="genero" class="cuerpo__campos">Genero</label>
-                            <select name="genero" class="cuerpo__input" id="genero">
-                                <option value="sin especificar" class="cuerpo__input">Sin especificar</option>
-                                <option value="hombre" class="cuerpo__input">Hombre</option>
-                                <option value="mujer" class="cuerpo__input">Mujer</option>
-                            </select>
+                            <article class="cuerpo__campos" id="campo-apodo">
+                                <label for="apodo" class="cuerpo__labels">Escribe aqui tu apodo</label>
+                                <input type="text" name="apodo" placeholder="Escribe aqui tu apodo" class="cuerpo__input" id="apodo">
+                                <p id="texto-apodo"></p>
+                            </article>
+                            <article class="cuerpo__campos" id="campo-imagen">
+                                <!--img src="./assets/img/default-sonic-image-profile.jpg" alt="imagen-de-usuario" class="cuerpo__imagen-de-perfil" id="imagen-de-perfil">
+                                <div class="cuerpo__contenedor">
+                                    <button class="cuerpo__input" id="subir-imagen">Agregar Imagen</button>
+                                    <button class="cuerpo__input" id="eliminar-imagen">Eliminar Imagen</button>
+                                </div-->
+                            </article>
+                            <article class="cuerpo__campos" id="campo-correo">
+                                <label for="correo" class="cuerpo__labels">Correo electronico</label>
+                                <input type="text" name="correo" placeholder="Escribe aqui tu correo electronico" class="cuerpo__input" id="correo">
+                                <p id="texto-correo"></p>
+                            </article>
+                            <article class="cuerpo__campos" id="campo-contraseña">
+                                <label for="contraseña" class="cuerpo__labels">Contraseña</label>
+                                <input type="password" name="contraseña" placeholder="Escribe aqui tu contraseña" class="cuerpo__input" id="contraseña">
+                                <p id="texto-contraseña"></p>
+                            </article>
+                            <article class="cuerpo__campos" id="campo-repetir-contraseña">
+                                <label for="repetir-contraseña" class="cuerpo__labels">Repetir contraseña</label>
+                                <input type="password" name="repetir-contraseña" placeholder="Repite aqui tu contraseña" class="cuerpo__input" id="repetir-contraseña">
+                                <p id="texto-repetir-contraseña"></p>
+                            </article>
 
-                            <label for="apodo" class="cuerpo__campos"></label>
-                            <input type="text" name="apodo" placeholder="Escribe aqui tu apodo" class="cuerpo__input" id="apodo">
-                            <!--img src="./assets/img/default-sonic-image-profile.jpg" alt="imagen-de-usuario" class="cuerpo__imagen-de-perfil" id="imagen-de-perfil">
-                            <div class="cuerpo__contenedor">
-                                <button class="cuerpo__input" id="subir-imagen">Agregar Imagen</button>
-                                <button class="cuerpo__input" id="eliminar-imagen">Eliminar Imagen</button>
-                            </div-->
-
-                            <label for="correo" class="cuerpo__campos">Correo electronico</label>
-                            <input type="text" name="correo" placeholder="Escribe aqui tu correo electronico" class="cuerpo__input" id="correo">
-
-
-                            <label for="contraseña" class="cuerpo__campos">Contraseña</label>
-                            <input type="password" name="contraseña" placeholder="Escribe aqui tu contraseña" class="cuerpo__input" id="contraseña">
-                            <label for="repetir-contraseña" class="cuerpo__campos">Contraseña</label>
-                            <input type="password" name="repetir-contraseña" placeholder="Repite aqui tu contraseña" class="cuerpo__input" id="repetir-contraseña">
-
-                            <label for="terminos" class="cuerpo__campo-termino">Acepto los terminos de privacidad y condiciones de servicio</label>
-                            <input type="checkbox" name="terminos" id="terminos">
-
-
+                            <article class="cuerpo__campos" id="campo-terminos">
+                                <label for="terminos" class="cuerpo__campo-termino">Acepto los terminos de privacidad y condiciones de servicio</label>
+                                <input type="checkbox" name="terminos" id="terminos">
+                                <p id="texto-terminos"></p>
+                            </article>
                             <label for="envio" class="cuerpo__campo-comfirmacion"></label>
                             <input type="submit" name="enviar" value="enviar formulario" class="cuerpo__input" id="envio">
                             <label for="reseteo" class="cuerpo__campo-comfirmacion"></label>
@@ -98,4 +120,6 @@
             </footer>
         </body>
         <script src="js/index.js"></script>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/envio.js"></script>
     </html>

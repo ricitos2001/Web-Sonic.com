@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -34,12 +34,15 @@
             </header>
             <main class="cuerpo2">
                 <section class="cuerpo2__informacion-producto">
-                    <a href="assets/img/sonic_lost_world.jpg" ><img src="assets/img/sonic_lost_world.jpg" alt="Sonic Lost World" class="cuerpo2__imagen-informacion-producto"></a>
+                    <a href="assets/img/sonic_lost_world.jpg" ><img src="assets/img/sonic_lost_world.jpg" alt="Sonic Lost World" class="cuerpo2__imagen-informacion-producto" id="imagen-producto"></a>
                     <article class="cuerpo2__descripcion-producto">
-                        <h3 class="cuerpo2__nombre-producto">Sonic lost world</h3>
+                        <h3 class="cuerpo2__nombre-producto" id="nombre-producto">Sonic lost world</h3>
                         <p class="cuerpo2__descripcion">Sonic Lost World es un videojuego de plataformas en la serie Sonic the Hedgehog lanzado exclusivamente para Wii U y Nintendo 3DS el 18 de Octubre de 2013 en Europa, el 24 de Octubre en Japón y el 29 de Octubre en Norte América. El juego fue desarrollado por Sonic Team para Wii U y Dimps para Nintendo 3DS</p>
                         <p class="cuerpo2__descripcion">Al estar en una persecución con el Dr. Eggman, Sonic y Tails llegan a un mundo perdido conocido como Lost Hex donde descubren que Eggman se ha aliado con una raza alienígena que se hacen llamar Deadly Six.</p>
-                        <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                        <div class="cuerpo2__div">
+                            <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                            <p><a class="cuerpo2__boton-regreso" id="añadir-al-carrito">Añadir al carrito</a></p>
+                        </div>
                     </article>
                 </section>
                 <h2 class="cuerpo2__titulo">OTROS PRODUCTOS</h2>
@@ -66,9 +69,11 @@
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
         <script src="js/index.js"></script>
-    </html>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/agregacion_de_productos.js"></script>
+</html>

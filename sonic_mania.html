@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -34,12 +34,15 @@
             </header>
             <main class="cuerpo2">
                 <section class="cuerpo2__informacion-producto">
-                    <a href="assets/img/sonic_mania.png" ><img src="assets/img/sonic_mania.png" alt="Sonic Mania" class="cuerpo2__imagen-informacion-producto"></a>
+                    <a href="assets/img/sonic_mania.png" ><img src="assets/img/sonic_mania.png" alt="Sonic Mania" class="cuerpo2__imagen-informacion-producto" id="imagen-producto"></a>
                     <article class="cuerpo2__descripcion-producto">
-                        <h3 class="cuerpo2__nombre-producto">Sonic mania</h3>
+                        <h3 class="cuerpo2__nombre-producto" id="nombre-producto">Sonic mania</h3>
                         <p class="cuerpo2__descripcion">Sonic Mania es un videojuego de plataformas estilo side-scroll perteneciente a la franquicia de Sonic the Hedgehog, el juego fue desarrollado como parte del 25° aniversario de la saga. Ubicado en el mundo de Classic Sonic, el juego sigue la historia de Sonic the Hedgehog, Miles "Tails" Prower y Knuckles the Echidna por detener al Dr. Eggman y sus nuevas creaciones los Hard Boiled Heavies que buscan aprovecharse de una nueva fuente de energía.</p>
                         <p class="cuerpo2__descripcion">Sonic Mania ha sido desarrollado por Christian Whitehead que ha trabajado anteriormente en ports de juegos clásicos en conjunto con Headcannon y PagodaWest Games, el juego emula la jugabilidad y la animación de sprites 2D de los originales juegos de Sonic de la Sega Mega Drive/Genesis. Este junto con Sonic Forces son considerados la "continuación del 25 aniversario de Sonic". El juego fue anunciado oficialmente el día 22 de julio de 2016, este fue finalmente lanzado el día 15 de agosto de 2017 para las consolas Nintendo Switch, Xbox One y PlayStation 4 y el 29 de agosto de 2017 para PC.</p>
-                        <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                        <div class="cuerpo2__div">
+                            <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                            <p><a class="cuerpo2__boton-regreso" id="añadir-al-carrito">Añadir al carrito</a></p>
+                        </div>
                     </article>
                 </section>
                 <h2 class="cuerpo2__titulo">OTROS PRODUCTOS</h2>
@@ -66,9 +69,11 @@
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
         <script src="js/index.js"></script>
-    </html>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/agregacion_de_productos.js"></script>
+</html>

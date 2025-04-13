@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -34,12 +34,15 @@
             </header>
             <main class="cuerpo2">
                 <section class="cuerpo2__informacion-producto">
-                    <a href="assets/img/sonic_superstars.jpg"><img src="assets/img/sonic_superstars.jpg" alt="Sonic Superstars" class="cuerpo2__imagen-informacion-producto"></a>
+                    <a href="assets/img/sonic_superstars.jpg"><img src="assets/img/sonic_superstars.jpg" alt="Sonic Superstars" class="cuerpo2__imagen-informacion-producto" id="imagen-producto"></a>
                     <article class="cuerpo2__descripcion-producto">
-                        <h3 class="cuerpo2__nombre-producto">Sonic superstars</h3>
+                        <h3 class="cuerpo2__nombre-producto" id="nombre-producto">Sonic superstars</h3>
                         <p class="cuerpo2__descripcion">Sonic Superstars es un videojuego de la serie Sonic the Hedgehog. Es un juego de plataformas en 2D, similar a las entradas de Sega Mega Drive, y sigue a Sonic, Tails, Amy y Knuckles mientras exploran las místicas Northstar Islands para derrotar al Dr. Eggman, quien se ha asociado con el travieso cazarrecompensas Fang the Sniper. para derrotar a los héroes.</p>
                         <p class="cuerpo2__descripcion">En particular, el juego contará con un nuevo personaje creado por el diseñador original de Sonic, Naoto Ōshima, y un "nuevo y misterioso adversario", aunque se desconoce si estos son personajes separados o uno en el mismo.</p>
-                        <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                        <div class="cuerpo2__div">
+                            <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                            <p><a class="cuerpo2__boton-regreso" id="añadir-al-carrito">Añadir al carrito</a></p>
+                        </div>
                     </article>
                 </section>
                 <h2 class="cuerpo2__titulo">OTROS PRODUCTOS</h2>
@@ -66,9 +69,11 @@
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
         <script src="js/index.js"></script>
-    </html>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/agregacion_de_productos.js"></script>
+</html>

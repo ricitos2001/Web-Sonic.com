@@ -14,7 +14,7 @@
                     <img src="assets/img/ring.gif" alt="Ring" class="cabecera__logo">
                     <h1>Web-Sonic.com</h1>
                     <label for="boton-modo-oscuro" class="cabecera__modo-oscuro">Modo oscuro</label>
-                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro" onclick="activarModoOscuro()">
+                    <input type="checkbox" id="boton-modo-oscuro" class="cabecera__boton-modo-oscuro">
                 </article>
                 <nav class="cabecera__navegador">
                     <input type="checkbox" id="casilla-menu" class="cabecera__casilla-menu">
@@ -34,12 +34,15 @@
             </header>
             <main class="cuerpo2">
                 <section class="cuerpo2__informacion-producto">
-                    <a href="assets/img/sonic_unleashed.jpg"><img src="assets/img/sonic_unleashed.jpg" alt="Sonic Unleaashed" class="cuerpo2__imagen-informacion-producto"></a>
+                    <a href="assets/img/sonic_unleashed.jpg"><img src="assets/img/sonic_unleashed.jpg" alt="Sonic Unleaashed" class="cuerpo2__imagen-informacion-producto" id="imagen-producto"></a>
                     <article class="cuerpo2__descripcion-producto">
-                        <h3 class="cuerpo2__nombre-producto">Sonic unleashed</h3>
+                        <h3 class="cuerpo2__nombre-producto" id="nombre-producto">Sonic unleashed</h3>
                         <p class="cuerpo2__descripcion">Sonic Unleashed, es un juego de la saga de Sonic es un juego desarrollado por Sonic Team en Japón y publicado por SEGA para múltiples plataformas siendo el juego de la serie principal de Sonic en la Wii y el último para PlayStation 2.</p>
                         <p class="cuerpo2__descripcion"> El juego sigue a Sonic the Hedgehog en su intento de restaurar el mundo a la normalidad después de que su némesis, el Doctor Eggman, divide los continentes del mundo en pedazos con un arma de rayos nueva y poderosa y el poder de las Chaos Emeralds, así como sus luchas con su nueva forma de bestia generado por las Esmeraldas en estado corrupto, Sonic the Werehog. Si bien la incorporación tradicional de plataformas y la velocidad que le da la marca de Sonic, el estilo de juego para este juego es muy diferente, centrándose en el juego plataforma 2D de desplazamiento lateral representado con imágenes en 3D, así como detrás de la espalda, las fases en tercera persona, el juego a la perfección da las transiciones entre estos dos estilos. Este cambio radical en el modo de juego, junto con el foco en la velocidad extrema y el impulso (en las etapas de día), hacen de este juego sea considerado como el primer juego "moderno" de Sonic, un estilo que fue representado más adelante en Sonic Colors y Sonic Generations.</p>
-                        <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                        <div class="cuerpo2__div">
+                            <p><a href="./pagina_de_productos.html" class="cuerpo2__boton-regreso">volver</a></p>
+                            <p><a class="cuerpo2__boton-regreso" id="añadir-al-carrito">Añadir al carrito</a></p>
+                        </div>
                     </article>
                 </section>
                 <h2 class="cuerpo2__titulo">OTROS PRODUCTOS</h2>
@@ -66,9 +69,11 @@
             </main>
             <footer class="pie">
                 <h4>Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)
-                    <img src="./assets/img/copyright.png" alt="Logo" id="pie__copyright" class="pie__copyright">
+                    <img src="./assets/img/copyright_black.png" alt="Logo" id="pie__copyright" class="pie__copyright">
                 </h4>
             </footer>
         </body>
         <script src="js/index.js"></script>
-    </html>
+        <script src="js/modo_oscuro.js"></script>
+        <script src="js/agregacion_de_productos.js"></script>
+</html>
