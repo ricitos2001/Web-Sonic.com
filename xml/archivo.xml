@@ -1,0 +1,26 @@
+<pisos>
+    <piso1>
+        <ubicacion>calle alcala</ubicacion>
+        <numeroDePlantas>5</numeroDePlantas>
+        <apartamentosPorPlanta>4</apartamentosPorPlanta>
+        <precio>17.59</precio>
+    </piso1>
+    <piso2>
+        <ubicacion>calle maria de molina</ubicacion>
+        <numeroDePlantas>6</numeroDePlantas>
+        <apartamentosPorPlanta>5</apartamentosPorPlanta>
+        <precio>20.59</precio>
+    </piso2>
+    <piso3>
+        <ubicacion>paseo del prado</ubicacion>
+        <numeroDePlantas>7</numeroDePlantas>
+        <apartamentosPorPlanta>5</apartamentosPorPlanta>
+        <precio>30.59</precio>
+    </piso3>
+    <piso4>
+        <ubicacion>calle fuencarral</ubicacion>
+        <numeroDePlantas>10</numeroDePlantas>
+        <apartamentosPorPlanta>6</apartamentosPorPlanta>
+        <precio>45.59</precio>
+    </piso4>
+</pisos>

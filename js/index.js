@@ -1,25 +1,25 @@
 /*
-let eliminarLabel = document.querySelector(".cabecera__modo-oscuro");
-let eliminarBoton = document.querySelector(".cabecera__boton-modo-oscuro");
+const eliminarLabel = document.querySelector(".cabecera__modo-oscuro");
+const eliminarBoton = document.querySelector(".cabecera__boton-modo-oscuro");
 eliminarLabel.remove();
 eliminarBoton.remove();
 
-let modificarPortada = document.querySelector(".cabecera__portada");
+const modificarPortada = document.querySelector(".cabecera__portada");
 modificarPortada.innerHTML = '<img src="../assets/img/ring.png" alt="Ring" class="cabecera__logo"/><h1></h1>';
 
-let agregarTextoPortada = document.querySelector("h1");
+const agregarTextoPortada = document.querySelector("h1");
 agregarTextoPortada.textContent = 'Web-Sonic.com';
 
-let modificarPie = document.querySelector(".pie");
+const modificarPie = document.querySelector(".pie");
 
-let texto = document.querySelector("h4");
+const texto = document.querySelector("h4");
 modificarPie.removeChild(texto);
 
 modificarPie.innerHTML = '<h4></h4>';
-let agregarTextoPie = document.querySelector("h4");
+const agregarTextoPie = document.querySelector("h4");
 agregarTextoPie.textContent = 'Pagina web realizada por Cesar Gabriel Ucha Sousa (alias: ricitos2001)';
 
-let img = document.createElement("img");
+const img = document.createElement("img");
 img.src = "../assets/img/copyright.png";
 img.alt = "Logo";
 img.className = "pie__copyright2";
@@ -32,9 +32,6 @@ img.style.getPropertyValue("height");
 
 modificarPie.appendChild(img);
 */
-
-//CREAR UNA PAGINA DE COMPRA (USO DEL LOCALSTORAGE)\\
-
 
 
 

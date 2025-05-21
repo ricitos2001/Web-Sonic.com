@@ -1,10 +1,13 @@
 //GALERIA INTERACTIVA DE IMAGENES\\
+document.addEventListener("DOMContentLoaded", function () {
+
+})
 const galeria = document.getElementById("galeria")
 const contenedor = document.createElement("article")
 
-let botonAgregarImagen = document.getElementById("agregar-imagen")
+const botonAgregarImagen = document.getElementById("agregar-imagen")
 botonAgregarImagen.addEventListener("click", function agregarImagen() {
-    let url = document.getElementById("url-imagen").value
+    const url = document.getElementById("url-imagen").value
     if (url) {
         const img = document.createElement("img")
         img.src = url
@@ -24,8 +27,8 @@ botonAgregarImagen.addEventListener("click", function agregarImagen() {
     document.getElementById("url-imagen").value = ""
 })
 
-const botonEliminarImagen = document.getElementById("eliminar-image")
+const botonEliminarImagen = document.getElementById("eliminar-imagen")
 botonEliminarImagen.addEventListener("click", function eliminarImagen() {
-    let imagen = document.getElementById("imagen-generada")
+    const imagen = document.getElementById("imagen-generada")
     contenedor.removeChild(imagen)
 })

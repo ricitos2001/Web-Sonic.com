@@ -12,7 +12,7 @@ const producto6 = document.getElementById("producto-6")
 const producto7 = document.getElementById("producto-7")
 const producto8 = document.getElementById("producto-8")
 
-let filtro1 = document.getElementById("filtro1")
+const filtro1 = document.getElementById("filtro1")
 filtro1.addEventListener("change", function mostrarProductosConPosicionImpar() {
     if (filtro1.checked)  {
         if (filtro2.checked) {
@@ -34,7 +34,7 @@ filtro1.addEventListener("change", function mostrarProductosConPosicionImpar() {
     }
 })
 
-let filtro2 = document.getElementById("filtro2")
+const filtro2 = document.getElementById("filtro2")
 filtro2.addEventListener("change", function mostrarProductosConPosicionPar() {
     if (filtro2.checked) {
         if (filtro1.checked) {
@@ -56,7 +56,7 @@ filtro2.addEventListener("change", function mostrarProductosConPosicionPar() {
     }
 })
 
-let filtro3 = document.getElementById("filtro3")
+const filtro3 = document.getElementById("filtro3")
 filtro3.addEventListener("change", function filtarPorOrdenDePopularidad() {
     if (filtro3.checked) {
         if (filtro1.checked) {
@@ -78,7 +78,7 @@ filtro3.addEventListener("change", function filtarPorOrdenDePopularidad() {
     }
 })
 
-let filtro4 = document.getElementById("filtro4")
+const filtro4 = document.getElementById("filtro4")
 filtro4.addEventListener("change", function filtrarPorFechaDeLanzamiento() {
     if (filtro4.checked) {
         if (filtro1.checked) {

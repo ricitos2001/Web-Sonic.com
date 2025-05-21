@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "modules": "^0.4.0",
+    "xml2js": "^0.6.2"
+  },
+  "name": "web-sonic.com",
+  "version": "1.0.0",
+  "description": "una simple pagina web de sonic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricitos2001/Web-Sonic.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ricitos2001/Web-Sonic.com/issues"
+  },
+  "homepage": "https://github.com/ricitos2001/Web-Sonic.com#readme"
+}
